@@ -1,0 +1,9 @@
+<% if hacker_signed_in? %>
+  <li>
+  <%= link_to('Logout', destroy_hacker_session_path, method: :delete) %>        
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Login', new_hacker_session_path)  %>  
+  </li>
+<% end %>
