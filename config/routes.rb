@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :hackers
+  devise_for :hackers, :controllers => { :omniauth_callbacks => "hackers/omniauth_callbacks" }
+
   get 'device/index'
 
   root 'device#index'
