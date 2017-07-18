@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: trigger_finger_production
   username: trigger_finger
   password: <%= ENV['TRIGGER_FINGER_DATABASE_PASSWORD'] %>
