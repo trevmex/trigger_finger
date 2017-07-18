@@ -58,3 +58,8 @@ gem 'devise'
 
 # Login with Facebook
 gem 'omniauth-facebook'
+
+# Get Heroku working
+gem 'rails_12factor', group: :production
+
+ruby "2.4.1"
