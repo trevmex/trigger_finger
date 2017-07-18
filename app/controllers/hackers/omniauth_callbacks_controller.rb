@@ -1,4 +1,4 @@
-class Hacker::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+class Hackers::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def facebook
     @hacker = Hacker.from_omniauth(request.env["omniauth.auth"])
 
