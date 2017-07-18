@@ -62,4 +62,7 @@ gem 'omniauth-facebook'
 # Get Heroku working
 gem 'rails_12factor', group: :production
 
+# Use ZURB Foundation for nice styles
+gem 'foundation-rails'
+
 ruby "2.4.1"
